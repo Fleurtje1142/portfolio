@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fleur van Gils</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/FvG.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/FvG.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/FvG.png" />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#F5E7E7" />
+    <meta name="msapplication-TileColor" content="#F5E7E7" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#F5E7E7" />
+  </head>
+
+  <body class="l-body">
+    <nav class="main-nav">
+      <a class="nav__menu-name" href="#">Fleur van Gils</a>
+      <section class="nav__section">
+        <ul class="nav__menu">
+          <li class="nav__menu-item"><a href="#">Home</a></li>
+          <li class="nav__menu-item"><a href="pages/games.html">Games</a></li>
+          <li class="nav__menu-item">
+            <a href="pages/websites.html">Websites</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <main class="l-main">
+      <img
+        class="main__image"
+        src="img/digital-art-style-illustration-graphic-designer_23-2151536941.avif"
+        alt=""
+      />
+      <section class="main__copy">
+        <h1 class="main__heading">
+          Hello, World! I’m Fleur and I'm a student.
+        </h1>
+        <p class="main__description">
+          My name is Fleur van Gils and I'm <span id="age"></span> years old. I
+          live in the Netherlands with my parents🧑🏻‍❤️‍👩🏼 and dog Kaisy🐶. In my
+          free time I like to play football⚽ (the european kind😉 ), walk with
+          the dog🐕, play games with friends👨🏻‍👩🏼‍👧🏼‍👧🏻 or family🧑🏻‍👩🏼‍👧🏼
+          (offline🎲 and online🎮), read books📖 or magazines📔 and watch series
+          or films🎞️.
+        </p>
+        <p class="main__description">
+          I'm studying at Sint Lucas in Eindhoven, Netherlands. I'm studying to
+          become a software developer. For one of my assignments we had to make
+          a portfolio website. This is it. On this site you will find some work
+          that I made. A couple of websites and a few games. This is the work
+          that I'm proud of the most.
+        </p>
+        <div class="main__link-group">
+          <svg
+            class="main__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,5v14c0,1.104,0.896,2,2,2h14c1.104,0,2-0.896,2-2V5c0-1.104-0.896-2-2-2H5C3.896,3,3,3.896,3,5z M10,7h8v2h-8V7z M10,11 h8v2h-8V11z M10,15h8v2h-8V15z M6,7h2v2H6V7z M6,11h2v2H6V11z M6,15h2v2H6V15z"
+            />
+          </svg>
+          <a
+            class="main__link"
+            href="https://fleurtje1142.github.io/Resume-develop/"
+            >Check out my r&eacute;sum&eacute;</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <address class="footer__social-section">
+        <ul class="footer__social">
+          <li class="footer__social-icon">
+            <a href="mailto:fleur.van.gils@sintlucasedu.nl">
+              <img
+                class="footer__social-icon"
+                src="img/bxs-envelope.svg"
+                alt="Email"
+            /></a>
+          </li>
+          <li class="footer__social-icon">
+            <a
+              href="https://github.com/Fleurtje1142"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="footer__social-icon"
+                src="img/bxl-github.svg"
+                alt="Github"
+            /></a>
+          </li>
+        </ul>
+      </address>
+      <p class="copyright">
+        &copy;
+        <script>
+          // Function to calculate the age based on the birthdate
+          function calculateAge(birthDate) {
+            const today = new Date();
+            const birth = new Date(birthDate);
+            let age = today.getFullYear() - birth.getFullYear();
+            const monthDiff = today.getMonth() - birth.getMonth();
+            const dayDiff = today.getDate() - birth.getDate();
+
+            // Adjust if the birthday hasn't happened yet this year
+            if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+              age--;
+            }
+            return age;
+          }
+
+          // Function to display the age on the page
+          function displayAge() {
+            const birthDate = "2003-06-02"; // Replace with the desired birthdate (format: YYYY-MM-DD)
+            const ageElement = document.getElementById("age");
+            ageElement.textContent = calculateAge(birthDate);
+          }
+
+          // Run the displayAge function when the page loads
+          window.onload = displayAge;
+
+          document.write(new Date().getFullYear());
+        </script>
+        , Fleur van Gils
+      </p>
+    </footer>
+  </body>
+</html>

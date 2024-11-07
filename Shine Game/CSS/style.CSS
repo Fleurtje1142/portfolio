@@ -1,0 +1,226 @@
+body {
+    display: grid;
+    grid-template-columns: auto 1600px auto;
+    grid-template-rows: auto 680px auto;
+    
+      
+}
+
+#title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: monospace;
+    color: #000000;
+   
+}
+
+#gameWindow {
+    width: 1600px;
+    height: 680px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    position: relative;
+}
+
+#inventoryBox {
+    width: 180px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.50);
+    top: 25px;
+    left: 25px;
+    color: #000000
+}
+
+#dialogBar {
+    bottom: 0px;
+}
+
+#setMainDialog {
+    position: relative;
+    width: 800px;
+    height: 64px;
+   
+}
+
+#heroAvatar {
+    width: 16px;
+    height: 16px;
+    bottom: 105px;
+    left: -3px;
+}
+
+#heroSpeech {
+    width: 500px;
+    background-color: #FFFFFF;
+    top: -14px;
+    left: 72px;
+    opacity: 0;
+}
+
+
+#counterSpeech {
+    width: 600px;
+    background-color: #FFFFFF;
+    top: -22px;
+    right: -700px;
+    opacity: 0;
+}
+
+#counterAvatar {
+    width: 70px;
+    height: 63px;
+    bottom: 70px;
+    right: -767px;
+    opacity: 0;
+}
+
+#doggieAvatar{
+    width: 70px;
+    height: 110px;
+    bottom: 2px;
+    right: -795px;
+    opacity: 0;
+}
+
+#doggieSpeech{
+    width: 500px;
+    background-color: #FFFFFF;
+    top: -14px;
+    right: -700px;
+    opacity: 0;
+}
+
+#froggieAvatar {
+    width: 70px;
+    height: 63px;
+    bottom: 47px;
+    right: -791px;
+    opacity: 0;
+}
+
+#froggieSpeech{
+    width: 500px;
+    background-color: #FFFFFF;
+    top: -14px;
+    right: -700px;
+    opacity: 0;
+}
+
+#pandaAvatar {
+    width: 70px;
+    height: 63px;
+    bottom: 65px;
+    right: -773px;
+    opacity: 0;
+}
+
+#pandaSpeech{
+    width: 500px;
+    background-color: #FFFFFF;
+    top: -14px;
+    right: -700px;
+    opacity: 0;
+}
+
+#brownBar{
+    bottom: 38px;
+    height: 50px;
+    width: 1601px;
+    background-color: rgba(255, 255, 255, 0.50);
+    
+}
+
+#squareTree {
+    width: 64px;
+    height: 64px;
+    left: 400px;
+    top: 150px;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+
+}
+
+#well {
+    width: 16px;
+    height: 10px; 
+    right: 174px;
+    top: 468px;
+}
+
+#panda{
+    width: 18px;
+    height: 15px; 
+    right: 165px;
+    top: 310px;
+}
+
+#statue {
+    width: 26px;
+    height: 24px; 
+    right: 368px;
+    top: 357px;
+}
+
+#doggie{
+    width: 10px;
+    height: 16px;
+    left: 675px;
+    top: 445px;
+    opacity: 1;
+}
+
+#frog {
+    width: 16px;
+    height: 16px; 
+    right: 207px;
+    top: 545px;
+}
+
+#chicken{
+    width: 34px;
+    height: 34px;
+    left: 643px;
+    top: 253px;
+}
+
+#hero {
+    top: 74px;
+    left: 281px;
+    width: 16px;
+    height: 16px;
+    transition: all 1s ease-in-out;
+}
+
+#tileMap {}
+
+.background {
+    position: absolute;
+    z-index: 0;
+}
+
+.character {
+    position: absolute;
+    z-index: 100;
+}
+
+.trees {
+    position: absolute;
+    z-index: 500;
+    transition: all 1s ease-in-out;
+}
+
+.foreground {
+    position: absolute;
+    z-index: 1000;
+    transition: all 1s ease-in-out;
+}
+
+.speechBubble{
+    border-radius: 60px;
+    padding: 5px 5px 5px 20px;
+    user-select: none;
+    cursor: default;
+    transition: all 1s ease-in-out;
+}
